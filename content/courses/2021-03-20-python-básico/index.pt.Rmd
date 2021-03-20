@@ -1,0 +1,71 @@
+---
+title: Python Básico
+author: admin
+date: '2021-03-20'
+slug: python-básico
+categories:
+  - Python
+  - Tutoriais
+tags:
+  - Python
+  - Tutoriais
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-20T00:52:13-03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Vamos com este tutorial aprender como funcionam os comandos básicos de Python:
+
+# Qual editor usar?
+
+Existem diversos editores de Python disponíveis, que vão desde os mais básicos como o **mu** e o **bpython** até os que são mais avançados como o **Atom** e o **Visual Studio Code**. Avalie qual o seu nível de familiaridade com a linguagem Python e as configurações do seu computador (memória, processador, sistema operacional, etc) e escolha aquele que mais combina com o seu perfil.
+
+# Comecemos com o básico:
+
+## O esqueleto do código:
+
+É importante que, ao começar um código, você defina o "esqueleto", que inclui a linguagem a ser utilizada (no caso, o português se enquadra no latin-1) e as bibliotecas a serem importadas para serem utilizadas no código (nos casos que aparecerão neste tutorial serão as bibliotecas *math* (para as funções matemáticas) e *string* (para manipulação de strings)).
+
+Exemplo de esqueleto no início de um código:
+
+```{python}
+
+#coding=latin-1
+#from string import *
+#from math import *
+
+#Definição das funções.
+
+#Início do programa principal.
+```
+
+## Mostrando resultados na tela:
+
+Para que os resultados sejam apresentados na tela, utilizamos a função primitiva *print(x)*, onde x é o que você deseja que seja mostrado na tela. Pode ser que seja uma frase, um resultado, uma conta. No caso de algo escrito, usam-se as aspas ("") para designar que o que está ali é um texto a ser apresentado.
+
+Exemplo:
+
+```{python}
+x=((25*40)-330)/5
+y="Hello World!"
+
+print(x)
+print(y)
+print(x,y)
+```
+
+Vejam que quando criamos x, o resultado da conta $x=\frac{(25*40)-330}{5}$ não apareceu. Ele só foi mostrado quando utilizamos a função *print(x)*. E quando colocamos *print(x,y)* ele mostrou ambos os resultados, x e y, um seguido do outro. Ou seja, a vírgula separa os argumentos a serem mostrados. Se alterarmos a ordem, como ficará?
+
+```{python}
+print(y,x)
+```
+
+Se alterarmos a ordem, a ordem será trocada igualmente na apresentação.
+

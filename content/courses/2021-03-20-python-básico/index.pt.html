@@ -1,0 +1,64 @@
+---
+title: Python Básico
+author: admin
+date: '2021-03-20'
+slug: python-básico
+categories:
+  - Python
+  - Tutoriais
+tags:
+  - Python
+  - Tutoriais
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-03-20T00:52:13-03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>Vamos com este tutorial aprender como funcionam os comandos básicos de Python:</p>
+<div id="qual-editor-usar" class="section level1">
+<h1>Qual editor usar?</h1>
+<p>Existem diversos editores de Python disponíveis, que vão desde os mais básicos como o <strong>mu</strong> e o <strong>bpython</strong> até os que são mais avançados como o <strong>Atom</strong> e o <strong>Visual Studio Code</strong>. Avalie qual o seu nível de familiaridade com a linguagem Python e as configurações do seu computador (memória, processador, sistema operacional, etc) e escolha aquele que mais combina com o seu perfil.</p>
+</div>
+<div id="comecemos-com-o-básico" class="section level1">
+<h1>Comecemos com o básico:</h1>
+<div id="o-esqueleto-do-código" class="section level2">
+<h2>O esqueleto do código:</h2>
+<p>É importante que, ao começar um código, você defina o “esqueleto”, que inclui a linguagem a ser utilizada (no caso, o português se enquadra no latin-1) e as bibliotecas a serem importadas para serem utilizadas no código (nos casos que aparecerão neste tutorial serão as bibliotecas <em>math</em> (para as funções matemáticas) e <em>string</em> (para manipulação de strings)).</p>
+<p>Exemplo de esqueleto no início de um código:</p>
+<pre class="python"><code>
+#coding=latin-1
+#from string import *
+#from math import *
+
+#Definição das funções.
+
+#Início do programa principal.</code></pre>
+</div>
+<div id="mostrando-resultados-na-tela" class="section level2">
+<h2>Mostrando resultados na tela:</h2>
+<p>Para que os resultados sejam apresentados na tela, utilizamos a função primitiva <em>print(x)</em>, onde x é o que você deseja que seja mostrado na tela. Pode ser que seja uma frase, um resultado, uma conta. No caso de algo escrito, usam-se as aspas ("") para designar que o que está ali é um texto a ser apresentado.</p>
+<p>Exemplo:</p>
+<pre class="python"><code>x=((25*40)-330)/5
+y=&quot;Hello World!&quot;
+
+print(x)</code></pre>
+<pre><code>## 134.0</code></pre>
+<pre class="python"><code>print(y)</code></pre>
+<pre><code>## Hello World!</code></pre>
+<pre class="python"><code>print(x,y)</code></pre>
+<pre><code>## 134.0 Hello World!</code></pre>
+<p>Vejam que quando criamos x, o resultado da conta <span class="math inline">\(x=\frac{(25*40)-330}{5}\)</span> não apareceu. Ele só foi mostrado quando utilizamos a função <em>print(x)</em>. E quando colocamos <em>print(x,y)</em> ele mostrou ambos os resultados, x e y, um seguido do outro. Ou seja, a vírgula separa os argumentos a serem mostrados. Se alterarmos a ordem, como ficará?</p>
+<pre class="python"><code>print(y,x)</code></pre>
+<pre><code>## Hello World! 134.0</code></pre>
+<p>Se alterarmos a ordem, a ordem será trocada igualmente na apresentação.</p>
+</div>
+</div>
